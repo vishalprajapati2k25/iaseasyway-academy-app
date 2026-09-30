@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    BookStore Launcher Background
+    Deep indigo-to-violet gradient to match brand palette.
+    Used by the adaptive icon system (API 26+).
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#1a1a2e" />
+</shape>

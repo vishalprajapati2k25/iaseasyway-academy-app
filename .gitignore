@@ -1,0 +1,19 @@
+# Gradle & Build caches
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+*.idsig
+
+# Local configuration & Secrets
+local.properties
+*.jks
+*.keystore
+.cxx/
+captures/
+
+# IDE files
+.idea/
+*.iml
+.DS_Store

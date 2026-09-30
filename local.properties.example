@@ -1,0 +1,5 @@
+sdk.dir=/home/virus/Android/Sdk
+KEYSTORE_FILE=release.jks
+KEYSTORE_PASSWORD=IASEasyWayAcademy2026!
+KEY_ALIAS=iaseasyway_release
+KEY_PASSWORD=IASEasyWayAcademy2026!
