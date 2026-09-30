@@ -171,3 +171,74 @@ This document defines the decoupled REST API contracts between the **IEW Academy
     ]
   }
   ```
+
+---
+
+## 6. Daily Newspaper Editorials & Linkages API
+
+### 6.1 Fetch Daily Editorials (The Hindu, Loksatta, The Indian Express)
+* **Endpoint**: `GET /api/v1/editorials?source={source}&date={YYYY-MM-DD}`
+* **Response**:
+  ```json
+  {
+    "articles": [
+      {
+        "id": "hindu_2024_09_governor_discretion",
+        "newspaper": "THE_HINDU",
+        "date": "September 30, 2026",
+        "title": "Federalism and the Governor’s Assent: Interpreting Article 200",
+        "subtitle": "Judicial guidelines on constitutional timelines and state autonomy",
+        "summary3Min": "Analysis of gubernatorial assent timelines...",
+        "keyTakeaways": ["Article 200 scope", "Shamsher Singh doctrine"],
+        "syllabusTopics": ["UPSC GS-II: Indian Constitution & Federalism", "MPSC Paper-II"],
+        "linkedStaticSubjects": ["Indian Polity", "Constitutional Law"],
+        "probablePrelimsQuestion": {
+          "id": "editorial_q_governor_200",
+          "subject": "Indian Polity",
+          "questionText": "With reference to the Governor's powers under Article 200...",
+          "options": ["...", "..."],
+          "correctAnswerIndex": 1,
+          "explanation": "..."
+        },
+        "probableMainsQuestion": "Discuss the constitutional friction regarding Article 200...",
+        "mainsModelFramework": ["Introduction: State Article 200...", "Body: Punchhi Commission recommendations...", "Conclusion: Sarkaria Commission guidelines..."],
+        "memoryShortcut": {
+          "mnemonicCode": "G-A-S-P (Governor's 4 Options)",
+          "reversePsychologyHook": "Don't memorize all 200 articles! Just remember what a Governor does when a bill arrives."
+        }
+      }
+    ]
+  }
+  ```
+
+---
+
+## 7. Reverse Psychology Memory Shortcuts & Mnemonics API
+
+### 7.1 Fetch Topic Shortcuts
+* **Endpoint**: `GET /api/v1/memory-shortcuts?subject={subject}`
+* **Response**:
+  ```json
+  {
+    "shortcuts": [
+      {
+        "id": "sc_fr_articles",
+        "topic": "Fundamental Rights Classification (Part III)",
+        "subject": "Indian Polity",
+        "reversePsychologyHook": "Think you can't remember all 6 Fundamental Rights? Bet you can't forget: 'Equality and Freedom Exploit Religion for Cultural Remedies!'",
+        "mnemonicCode": "E-F-E-R-C-R",
+        "breakdown": [
+          "E = Equality (Art 14-18)",
+          "F = Freedom (Art 19-22)",
+          "E = Exploitation Prohibition (Art 23-24)",
+          "R = Religious Freedom (Art 25-28)",
+          "C = Cultural & Educational Rights (Art 29-30)",
+          "R = Constitutional Remedies (Art 32)"
+        ],
+        "fullExplanation": "Six fundamental rights grouped logically with exact Article spans.",
+        "whenToUse": "Before studying Part III or during rapid 10-second exam recall"
+      }
+    ]
+  }
+  ```
+
