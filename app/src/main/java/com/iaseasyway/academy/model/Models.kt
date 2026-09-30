@@ -150,3 +150,37 @@ data class SchoolGradeItem(
     val totalLessons: Int,
     val foundationFocus: String
 )
+
+enum class NewspaperSource(val displayName: String, val badgeColorHex: Long) {
+    ALL("All Editorials", 0xFF334155),
+    THE_HINDU("The Hindu", 0xFF0A192F),
+    LOKSATTA("Loksatta (लोकसत्ता)", 0xFFB91C1C),
+    INDIAN_EXPRESS("The Indian Express", 0xFF1E3A8A)
+}
+
+data class MemoryShortcut(
+    val id: String,
+    val topic: String,
+    val subject: String,
+    val reversePsychologyHook: String,
+    val mnemonicCode: String,
+    val breakdown: List<String>,
+    val fullExplanation: String,
+    val whenToUse: String = "Before studying or for rapid exam recall"
+)
+
+data class EditorialArticle(
+    val id: String,
+    val newspaper: NewspaperSource,
+    val date: String,
+    val title: String,
+    val subtitle: String,
+    val summary3Min: String,
+    val keyTakeaways: List<String>,
+    val syllabusTopics: List<String>,
+    val linkedStaticSubjects: List<String>,
+    val probablePrelimsQuestion: ExamQuestion,
+    val probableMainsQuestion: String,
+    val mainsModelFramework: List<String>,
+    val memoryShortcut: MemoryShortcut? = null
+)

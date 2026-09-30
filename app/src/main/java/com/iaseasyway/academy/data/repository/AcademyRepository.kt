@@ -29,6 +29,12 @@ class AcademyRepository(private val scope: CoroutineScope = CoroutineScope(Dispa
     private val _liveArticles = MutableStateFlow<List<WordPressPost>>(emptyList())
     val liveArticles: StateFlow<List<WordPressPost>> = _liveArticles.asStateFlow()
 
+    private val _editorials = MutableStateFlow(SeedData.editorials)
+    val editorials: StateFlow<List<EditorialArticle>> = _editorials.asStateFlow()
+
+    private val _memoryShortcuts = MutableStateFlow(SeedData.memoryShortcuts)
+    val memoryShortcuts: StateFlow<List<MemoryShortcut>> = _memoryShortcuts.asStateFlow()
+
     private val _activeExamPaper = MutableStateFlow<ExamPaper?>(null)
     val activeExamPaper: StateFlow<ExamPaper?> = _activeExamPaper.asStateFlow()
 

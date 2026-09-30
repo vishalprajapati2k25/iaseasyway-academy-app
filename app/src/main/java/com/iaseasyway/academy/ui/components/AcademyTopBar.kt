@@ -3,12 +3,14 @@ package com.iaseasyway.academy.ui.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ElectricBolt
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.LocalFireDepartment
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.School
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -25,7 +27,8 @@ import com.iaseasyway.academy.ui.theme.*
 fun AcademyTopBar(
     userProfile: UserProfile,
     onClassClick: () -> Unit,
-    onRefillHeartsClick: () -> Unit = {}
+    onRefillHeartsClick: () -> Unit = {},
+    onProfileClick: () -> Unit = {}
 ) {
     Surface(
         color = Navy900,
@@ -120,6 +123,23 @@ fun AcademyTopBar(
                         text = "${userProfile.totalXp}",
                         textColor = DuolingoBlue
                     )
+
+                    // Profile Icon
+                    Box(
+                        modifier = Modifier
+                            .size(28.dp)
+                            .clip(CircleShape)
+                            .background(Navy800)
+                            .clickable { onProfileClick() },
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Person,
+                            contentDescription = "Profile",
+                            tint = PureWhite,
+                            modifier = Modifier.size(18.dp)
+                        )
+                    }
                 }
             }
 

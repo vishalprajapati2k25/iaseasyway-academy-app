@@ -13,10 +13,10 @@ import com.iaseasyway.academy.ui.theme.TextMuted
 
 enum class AcademyTab(val title: String) {
     LEARN("Play"),
-    EXAMS("Exams & PYQ"),
+    EDITORIALS("Editorials & Hacks"),
+    EXAMS("Exams"),
     COURSES("Courses"),
-    SCHOOL("5th-Grad"),
-    PROFILE("Profile")
+    SCHOOL("School Hub")
 }
 
 @Composable
@@ -44,6 +44,20 @@ fun AcademyBottomBar(
         )
 
         BottomNavigationItem(
+            selected = currentTab == AcademyTab.EDITORIALS,
+            onClick = { onTabSelected(AcademyTab.EDITORIALS) },
+            icon = {
+                Icon(
+                    imageVector = Icons.Default.MenuBook,
+                    contentDescription = "Editorials & Hacks"
+                )
+            },
+            label = { Text(AcademyTab.EDITORIALS.title) },
+            selectedContentColor = DuolingoGreen,
+            unselectedContentColor = TextMuted
+        )
+
+        BottomNavigationItem(
             selected = currentTab == AcademyTab.EXAMS,
             onClick = { onTabSelected(AcademyTab.EXAMS) },
             icon = {
@@ -62,7 +76,7 @@ fun AcademyBottomBar(
             onClick = { onTabSelected(AcademyTab.COURSES) },
             icon = {
                 Icon(
-                    imageVector = Icons.Default.MenuBook,
+                    imageVector = Icons.Default.School,
                     contentDescription = "Academy Courses"
                 )
             },
@@ -76,25 +90,11 @@ fun AcademyBottomBar(
             onClick = { onTabSelected(AcademyTab.SCHOOL) },
             icon = {
                 Icon(
-                    imageVector = Icons.Default.School,
-                    contentDescription = "5th till Graduation"
+                    imageVector = Icons.Default.Class,
+                    contentDescription = "School & Foundation"
                 )
             },
             label = { Text(AcademyTab.SCHOOL.title) },
-            selectedContentColor = DuolingoGreen,
-            unselectedContentColor = TextMuted
-        )
-
-        BottomNavigationItem(
-            selected = currentTab == AcademyTab.PROFILE,
-            onClick = { onTabSelected(AcademyTab.PROFILE) },
-            icon = {
-                Icon(
-                    imageVector = Icons.Default.Person,
-                    contentDescription = "Profile & Security"
-                )
-            },
-            label = { Text(AcademyTab.PROFILE.title) },
             selectedContentColor = DuolingoGreen,
             unselectedContentColor = TextMuted
         )

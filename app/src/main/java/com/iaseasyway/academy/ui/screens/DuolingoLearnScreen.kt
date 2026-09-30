@@ -379,7 +379,31 @@ fun GamifiedPlayModal(
                         color = TextDark
                     )
 
-                    Spacer(modifier = Modifier.height(16.dp))
+                    // Pre-Topic Reverse Psychology Teaser Hook (fits better in memory before learning)
+                    question.mnemonic?.let { mnemonicText ->
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clip(RoundedCornerShape(8.dp))
+                                .background(DuolingoGold.copy(alpha = 0.12f))
+                                .border(1.dp, DuolingoGold, RoundedCornerShape(8.dp))
+                                .padding(horizontal = 10.dp, vertical = 6.dp)
+                        ) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Text(text = "🧠", fontSize = 14.sp)
+                                Spacer(modifier = Modifier.width(6.dp))
+                                Text(
+                                    text = "Pre-Learning Hook: Don't guess randomly! Notice the keyword pattern before you pick your option.",
+                                    fontSize = 11.sp,
+                                    fontWeight = FontWeight.SemiBold,
+                                    color = DuolingoGoldDark
+                                )
+                            }
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(14.dp))
 
                     // Options
                     question.options.forEachIndexed { idx, optText ->

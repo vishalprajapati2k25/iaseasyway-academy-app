@@ -1022,4 +1022,255 @@ object SeedData {
             foundationFocus = "Intensive PYQs, timed mock tests, essay perspectives, ethics case studies, and interview guidance."
         )
     )
+
+    val memoryShortcuts: List<MemoryShortcut> = listOf(
+        MemoryShortcut(
+            id = "sc_polity_fr",
+            topic = "Fundamental Rights (Articles 14 to 32)",
+            subject = "Indian Polity & Constitution",
+            reversePsychologyHook = "Stop! DO NOT try to memorize 30 articles sequentially like average aspirants who get confused in prelims. Use this 6-key cluster lock.",
+            mnemonicCode = "E - F - E - R - C - C",
+            breakdown = listOf(
+                "E = Equality before Law & Equal Opportunity (Articles 14 - 18)",
+                "F = Freedom of Speech, Assembly, Life (Articles 19 - 22)",
+                "E = Exploitation Prohibition (Human trafficking & Child labour) (Articles 23 - 24)",
+                "R = Religion & Conscience Freedom (Articles 25 - 28)",
+                "C = Cultural & Educational Rights of Minorities (Articles 29 - 30)",
+                "C = Constitutional Remedies (Writs under Article 32 - Heart & Soul)"
+            ),
+            fullExplanation = "The 44th Amendment Act 1978 permanently removed the Right to Property (Article 31), leaving exactly these 6 clusters. Memorizing the cluster anchor prevents confusing individual article numbers.",
+            whenToUse = "Before learning Articles 12-35 in UPSC/MPSC"
+        ),
+        MemoryShortcut(
+            id = "sc_geo_cancer_states",
+            topic = "Tropic of Cancer - 8 Indian States (West to East)",
+            subject = "Indian Geography",
+            reversePsychologyHook = "Whatever you do, DO NOT learn these states in alphabetical order or you will lose 2 marks in chronological West-to-East exam questions!",
+            mnemonicCode = "GARAM CHAI JALEBI BANO TASTY MAZA",
+            breakdown = listOf(
+                "GARAM -> G = Gujarat, R = Rajasthan, M = Madhya Pradesh",
+                "CHAI -> Chhattisgarh",
+                "JALEBI -> Jharkhand",
+                "BANO -> Bengal (West Bengal)",
+                "TASTY -> Tripura",
+                "MAZA -> Mizoram"
+            ),
+            fullExplanation = "This rhyming phrase maps the exact West-to-East longitudinal alignment from 68°E in Gujarat to 93°E in Mizoram across the 23.5° N Tropic of Cancer.",
+            whenToUse = "Before physical geography and map-reading sessions"
+        ),
+        MemoryShortcut(
+            id = "sc_mh_sahyadri_peaks",
+            topic = "सह्याद्री पर्वतरांगेतील सर्वोच्च शिखरे (उतरता क्रम)",
+            subject = "Maharashtra Geography (MPSC / Talathi)",
+            reversePsychologyHook = "ही सर्व शिखरे आणि त्यांची उंची पाठ करू नका! फक्त हा एक सोपा मराठी शब्द उच्चारा आणि उतरता क्रम आपोआप आठवेल...",
+            mnemonicCode = "क - सा - मी - ह - स - तो (K-SA-MI-HA-SA-TO)",
+            breakdown = listOf(
+                "क = कळसूबाई (१,६४६ मी - अहमदनगर, महाराष्ट्रातील सर्वोच्च शिखर)",
+                "सा = साल्हेर (१,५६७ मी - नाशिक, सर्वोच्च किल्ला)",
+                "मी = महाबळेश्वर (१,४३८ मी - सातारा)",
+                "ह = हरिश्चंद्रगड (१,४२४ मी - अहमदनगर)",
+                "स = सप्तशृंगी (१,४१६ मी - नाशिक)",
+                "तो = तोरणा (१,४०४ मी - पुणे)"
+            ),
+            fullExplanation = "MPSC राज्यसेवा, संयुक्त गट ब व क तसेच तलाठी परीक्षेत 'शिखरांचा उंचीनुसार उतरता क्रम लावा' किंवा 'जोड्या जुळवा' असा प्रश्न नेहमी हमखास येतो. या एका शब्दाने ६ शिखरांचा अचूक क्रम कायमस्वरूपी पक्का होतो.",
+            whenToUse = "महाराष्ट्राचा भूगोल अभ्यासण्यापूर्वी"
+        ),
+        MemoryShortcut(
+            id = "sc_mh_ashtapradhan",
+            topic = "छत्रपती शिवाजी महाराज: अष्टप्रधान मंडळ व खाती",
+            subject = "Maharashtra History & Administration",
+            reversePsychologyHook = "अष्टप्रधान मंडळातील ८ मंत्र्यांची क्लिष्ट नावे पाठ करण्याचा प्रयत्न करू नका. फक्त दरबारातील ओळ लक्षात ठेवा...",
+            mnemonicCode = "पे - अ - स - वा - से - सु - पं - न्या",
+            breakdown = listOf(
+                "पे = पेशवे (मुख्य प्रधान - सर्व कारभार व राजाच्या गैरहजेरीत राज्य चालवणे)",
+                "अ = अमात्य (वित्त व महसूल हिशोब तपासणी)",
+                "स = सचिव / सुरनिस (सरकारी आज्ञापत्रे व पत्रव्यवहार)",
+                "वा = वाकनीस (गृहमंत्री, राजाची रोजनिशी व खाजगी कारभार)",
+                "से = सेनापती / सरसेनापती (घोडदळ व पायदळ लष्करप्रमुख)",
+                "सु = सुमंत (परराष्ट्र मंत्री / दूतसंबंध)",
+                "पं = पंडितराव (धर्मदाय व दानधर्म विभागप्रमुख)",
+                "न्या = न्यायाधीश (सर्वोच्च न्यायदान)"
+            ),
+            fullExplanation = "शिवाजी महाराजांच्या प्रशासनात पंडितराव व न्यायाधीश वगळता इतर सर्व मंत्र्यांना युद्धप्रसंगी लष्कराचे नेतृत्व करावे लागत होते.",
+            whenToUse = "मराठा इतिहास व मध्ययुगीन भारत अभ्यासताना"
+        ),
+        MemoryShortcut(
+            id = "sc_econ_cpi_wpi",
+            topic = "Inflation Indices: WPI vs CPI Difference",
+            subject = "Indian Economy (UPSC GS-3 & MPSC)",
+            reversePsychologyHook = "Why does the RBI not care about WPI anymore? Because you don't buy cement at wholesale for breakfast!",
+            mnemonicCode = "CPI = Common Person Index (Food 45.8% + Services included, Target 4% +/- 2%)",
+            breakdown = listOf(
+                "WPI: Wholesale Price Index (697 Commodities, ONLY GOODS - Zero Services, Base 2011-12, Released by DPIIT/Ministry of Commerce)",
+                "CPI: Consumer Price Index (Goods + Services like Health/Education, Food weight approx 45.8%, Base 2012, Released by NSO)",
+                "RBI Target: Urjit Patel Committee recommended headline CPI targeting for monetary policy."
+            ),
+            fullExplanation = "Whenever Prelims asks 'Which index includes services?', remember only CPI touches the end consumer and includes services.",
+            whenToUse = "Before studying Inflation and Monetary Policy"
+        ),
+        MemoryShortcut(
+            id = "sc_math_divisibility_11",
+            topic = "Speed Math: 11 ची कसोटी (Navodaya & Scholarship Hack)",
+            subject = "Mental Ability & Quantitative Aptitude",
+            reversePsychologyHook = "Never waste 40 seconds doing long division in scholarship or JNVST! Use the Alternate Sum trick in 3 seconds.",
+            mnemonicCode = "(विषम स्थानावरील अंकांची बेरीज) - (सम स्थानावरील अंकांची बेरीज) = 0 किंवा 11 ची पट",
+            breakdown = listOf(
+                "उदा. संख्या: 8,51,444",
+                "विषम स्थाने (1st, 3rd, 5th): 8 + 1 + 4 = 13",
+                "सम स्थाने (2nd, 4th, 6th): 5 + 4 + 4 = 13",
+                "फरक = 13 - 13 = 0 -> संख्या 11 ने निःशेष विभाज्य आहे!"
+            ),
+            fullExplanation = "4थी/5वी शिष्यवृत्ती व नवोदय परीक्षेत ४-६ अंकी संख्या देऊन 'खालीलपैकी कोणती संख्या ११ ने विभाज्य आहे?' असा प्रश्न असतो. या युक्तीने ३ सेकंदात उत्तर मिळते.",
+            whenToUse = "नवोदय व स्कॉलरशिप गणित सोडवण्यापूर्वी"
+        )
+    )
+
+    val editorials: List<EditorialArticle> = listOf(
+        EditorialArticle(
+            id = "ed_hindu_mpc_2025",
+            newspaper = NewspaperSource.THE_HINDU,
+            date = "Daily Editorial Analysis",
+            title = "Navigating The Growth-Inflation Tradeoff: The MPC's Policy Balancing Act",
+            subtitle = "Why core inflation moderation and food price volatility demand calibrated monetary transmission",
+            summary3Min = "The editorial in The Hindu examines the Reserve Bank of India's Monetary Policy Committee deliberations. While headline inflation frequently spikes due to climate-driven vegetable and pulses shocks, core inflation (excluding food and fuel) has anchored around historic lows. The piece underscores that monetary policy is fundamentally a demand-management instrument and possesses limited efficacy against supply-side crop disruptions.",
+            keyTakeaways = listOf(
+                "Flexible Inflation Targeting: Statutory mandate of 4% CPI headline inflation within +/- 2% tolerance band (2% to 6%).",
+                "Core vs Headline Divergence: Core inflation softness indicates steady demand, whereas food volatility distorts consumer perceptions.",
+                "Transmission Mechanism: Bank lending rates and Standing Deposit Facility (SDF) liquidity absorption."
+            ),
+            syllabusTopics = listOf(
+                "UPSC GS Paper 3: Indian Economy & Issues Relating to Planning, Growth, Development",
+                "UPSC Prelims: Monetary Policy Committee, RBI Act, Inflation Indices",
+                "MPSC GS Paper 4: Macroeconomics, Banking & Monetary Controls"
+            ),
+            linkedStaticSubjects = listOf(
+                "Section 45ZB of RBI Act 1934 (6-Member MPC composition)",
+                "Consumer Price Index (CPI-Combined) Base Year 2012",
+                "Repo Rate, Reverse Repo & Standing Deposit Facility (SDF)"
+            ),
+            probablePrelimsQuestion = ExamQuestion(
+                id = "pq_ed_1",
+                number = 1,
+                text = "With reference to the Monetary Policy Committee (MPC) in India, consider the following statements:\n1. It determines the policy repo rate required to achieve the inflation target.\n2. The Committee consists of six members, including three from the RBI and three appointed by the Central Government.\n3. The Governor of the RBI has a casting vote in the event of an equality of votes.\nWhich of the statements given above are correct?",
+                textMarathi = "भारतातील चलनविषयक धोरण समिती (MPC) संदर्भात खालील विधाने विचारात घ्या:\n१. महागाईचे उद्दिष्ट साध्य करण्यासाठी आवश्यक असणारा रेपो दर ही समिती ठरवते.\n२. या समितीत एकूण सहा सदस्य असतात (तीन आरबीआयचे व तीन केंद्र सरकार नियुक्त).\n३. बरोबरी झाल्यास आरबीआयच्या गव्हर्नरांना निर्णायक मत देण्याचा अधिकार असतो.\nवरीलपैकी कोणती विधाने बरोबर आहेत?",
+                options = listOf(
+                    "A. 1 and 2 only",
+                    "B. 2 and 3 only",
+                    "C. 1 and 3 only",
+                    "D. 1, 2 and 3"
+                ),
+                correctOptionIndex = 3,
+                explanation = "All statements are correct under Section 45ZB of the Reserve Bank of India Act, 1934. The MPC meets at least four times a year.",
+                pyqYear = "Editorial Probable Prelims",
+                subject = "Indian Economy"
+            ),
+            probableMainsQuestion = "Critically examine the limitations of interest-rate monetary policy tools in curbing persistent food inflation shocks in emerging market economies like India. (250 words, 15 marks)",
+            mainsModelFramework = listOf(
+                "1. Introduction: Define Flexible Inflation Targeting (FIT) under Section 45ZA and the dual mandate of price stability with growth.",
+                "2. The Supply-Side Conundrum: Food constitutes ~45.8% of CPI basket. Rate hikes cannot produce onions or lower diesel prices.",
+                "3. Secondary Effects Risk: Why RBI cannot ignore food inflation completely (generalized inflation expectations & wage-price spirals).",
+                "4. Way Forward: Coordinated fiscal and monetary policy — targeted buffer stock open sales, cold-chain infrastructure, and agri-logistics."
+            ),
+            memoryShortcut = memoryShortcuts[4] // WPI vs CPI
+        ),
+        EditorialArticle(
+            id = "ed_loksatta_panchayat_2025",
+            newspaper = NewspaperSource.LOKSATTA,
+            date = "दैनिक लोकसत्ता विश्लेषण",
+            title = "स्थानिक स्वराज्य संस्था आणि लोकशाहीचे विकेंद्रीकरण: ७३ व्या घटनादुरुस्तीचा वास्तवदर्शी आढावा",
+            subtitle = "महाराष्ट्रातील जिल्हा परिषदा, पंचायत समित्या आणि ग्रामपंचायतींची स्वायत्तता व निधी वितरणातील आव्हाने",
+            summary3Min = "लोकसत्ताच्या अग्रलेखात महाराष्ट्रातील स्थानिक स्वराज्य संस्थांच्या सद्यस्थितीचे सविस्तर परीक्षण करण्यात आले आहे. ७३ व्या घटनादुरुस्तीने संविधानात ११ वी अनुसूची समाविष्ट करून २९ विषय पंचायतींकडे सोपवण्याचे निर्देश दिले होते. तथापि, महाराष्ट्रात आजही जिल्हा परिषदा व ग्रामपंचायतींना स्वतःचे उत्पन्नाचे स्रोत मर्यादित असल्याने राज्य शासनाच्या अनुदानावर अवलंबून राहावे लागत आहे. राज्य वित्त आयोगाच्या शिफारशी वेळेवर लागू न होणे व प्रशासकीय अडथळे यावर लेखात प्रकाश टाकला आहे.",
+            keyTakeaways = listOf(
+                "घटनात्मक चौकट: ७३ वी घटनादुरुस्ती कायदा १९९२, कलम २४३ ते २४३-O आणि ११ वी अनुसूची (२९ विषय).",
+                "महाराष्ट्राचा ऐतिहासिक वारसा: वसंतराव नाईक समिती (१९६०) च्या शिफारशीनुसार १ मे १९६२ रोजी त्रिस्तरीय पंचायत राज सुरू करणारे महाराष्ट्र हे देशातील अग्रगण्य राज्य.",
+                "वित्तीय स्वायत्ततेचा अभाव: स्वतःचे कर संकलन अल्प असल्याने ग्रामपंचायतींना विकासकामांसाठी जिल्हा नियोजनावर अवलंबून राहावे लागते."
+            ),
+            syllabusTopics = listOf(
+                "MPSC Mains GS-2: भारतीय राज्यघटना, राजकारण व कायदा (स्थानिक स्वराज्य संस्था)",
+                "UPSC GS-2: Devolution of Powers and Finances up to Local Levels & Challenges",
+                "Maharashtra Group C & Talathi: पंचायत राज व जिल्हा प्रशासन"
+            ),
+            linkedStaticSubjects = listOf(
+                "Article 243-I (State Finance Commission) & Article 243-K (State Election Commission)",
+                "Maharashtra Zilla Parishads and Panchayat Samitis Act, 1961",
+                "73rd & 74th Constitutional Amendment Acts"
+            ),
+            probablePrelimsQuestion = ExamQuestion(
+                id = "pq_ed_2",
+                number = 2,
+                text = "Which Constitutional Article mandates the appointment of a State Finance Commission every five years to review the financial position of Panchayats?",
+                textMarathi = "पंचायतींच्या वित्तीय स्थितीचे पुनरावलोकन करण्यासाठी दर पाच वर्षांनी राज्य वित्त आयोग (State Finance Commission) स्थापन करण्याची तरतूद कोणत्या कलमात आहे?",
+                options = listOf(
+                    "A. Article 243-E",
+                    "B. Article 243-I (कलम २४३-I)",
+                    "C. Article 243-K",
+                    "D. Article 280"
+                ),
+                optionsMarathi = listOf(
+                    "A. कलम २४३-E (कार्यकाळ)",
+                    "B. कलम २४३-I (राज्य वित्त आयोग)",
+                    "C. कलम २४३-K (राज्य निवडणूक आयोग)",
+                    "D. कलम २८० (केंद्रीय वित्त आयोग)"
+                ),
+                correctOptionIndex = 1,
+                explanation = "कलम २४३-I नुसार राज्यपाल दर पाच वर्षांनी पंचायतींच्या आर्थिक स्थितीचे पुनरावलोकन करण्यासाठी राज्य वित्त आयोगाची स्थापना करतात. (नागरी संस्थांसाठी कलम २४३-Y).",
+                pyqYear = "Editorial Probable Prelims",
+                subject = "MPSC Polity & Panchayati Raj"
+            ),
+            probableMainsQuestion = "स्थानिक स्वराज्य संस्थांना 'निधी, कार्ये आणि कर्मचारी' (Funds, Functions, Functionaries) यांचे वास्तविक हस्तांतरण झाल्याशिवाय गावपातळीवरील सुशासनाचे उद्दिष्ट पूर्ण होऊ शकत नाही. महाराष्ट्राच्या संदर्भात सविस्तर मूल्यमापन करा. (२५० शब्द, १५ गुण)",
+            mainsModelFramework = listOf(
+                "१. प्रस्तावना: ७३ व्या घटनादुरुस्तीचे उद्दिष्ट, लोकशाहीचे तळागाळापर्यंत विकेंद्रीकरण आणि वसंतराव नाईक समितीचा वारसा.",
+                "२. मुख्य भाग (अडचणी): स्वतःच्या कर उत्पन्नाची मर्यादा, राज्य शासनाकडून निधी वितरणात होणारा विलंब, नोकरशाहीचे दुहेरी नियंत्रण.",
+                "३. मुख्य भाग (सकारात्मक बाबी): महिलांचे ५०% आरक्षण, ग्रामसभांचे सक्षमीकरण, पेसा (PESA) क्षेत्रातील अधिकार.",
+                "४. उपाययोजना व निष्कर्ष: राज्य वित्त आयोगाच्या शिफारशी वेळेत लागू करणे, डिजिटल ग्रामपंचायत सक्षमीकरण आणि प्रशासकीय स्वायत्तता."
+            ),
+            memoryShortcut = memoryShortcuts[2] // Sahyadri peaks & state memory
+        ),
+        EditorialArticle(
+            id = "ed_express_green_hydrogen_2025",
+            newspaper = NewspaperSource.INDIAN_EXPRESS,
+            date = "Explained & Editorial Analysis",
+            title = "The Green Hydrogen Frontier: Scaling Production, Lowering Costs & Grid Integration",
+            subtitle = "How the Strategic Interventions for Green Hydrogen Transition (SIGHT) scheme is unlocking energy independence",
+            summary3Min = "The Indian Express editorial analyzes the technological and financial trajectory of India's National Green Hydrogen Mission. With an ambitious target of producing 5 Million Metric Tonnes (MMT) annually by 2030, the primary bottleneck remains the Levelized Cost of Hydrogen (LCOH), currently $4-5 per kg compared to $1.5-2 for fossil-fuel derived grey hydrogen. The article highlights the PLI incentives for indigenous electrolyser manufacturing and dedicated green ammonia export clusters.",
+            keyTakeaways = listOf(
+                "5 MMT per annum by 2030 with associated 125 GW renewable capacity addition.",
+                "SIGHT Scheme: Production Linked Incentives (PLI) for both domestic electrolyser manufacturing and green hydrogen production.",
+                "Decarbonization Priorities: Hard-to-abate sectors including oil refineries, steel manufacturing, and fertilizer plants."
+            ),
+            syllabusTopics = listOf(
+                "UPSC GS Paper 3: Infrastructure, Energy, Science & Technology, Climate Change Mitigation",
+                "UPSC Prelims: Renewable Energy Missions, COP28 Pledges, Panchamrit Targets"
+            ),
+            linkedStaticSubjects = listOf(
+                "Electrolysis: Alkaline vs Proton Exchange Membrane (PEM) Electrolysers",
+                "Hydrogen Colors: Grey (Gas), Blue (Gas+CCUS), Black (Coal), Green (Water+Renewables)",
+                "Nationally Determined Contributions (NDCs) & Net-Zero 2070"
+            ),
+            probablePrelimsQuestion = ExamQuestion(
+                id = "pq_ed_3",
+                number = 3,
+                text = "Under the National Green Hydrogen Mission, what is the targeted annual green hydrogen production capacity set by the Government of India to be achieved by 2030?",
+                options = listOf(
+                    "A. 1 Million Metric Tonnes (MMT)",
+                    "B. 3 Million Metric Tonnes (MMT)",
+                    "C. 5 Million Metric Tonnes (MMT)",
+                    "D. 10 Million Metric Tonnes (MMT)"
+                ),
+                correctOptionIndex = 2,
+                explanation = "The National Green Hydrogen Mission targets at least 5 Million Metric Tonnes (MMT) per annum of green hydrogen production with ~125 GW renewable capacity addition by 2030.",
+                pyqYear = "Editorial Probable Prelims",
+                subject = "Science & Environment"
+            ),
+            probableMainsQuestion = "Analyze the techno-economic hurdles in transitioning from grey to green hydrogen in India's industrial sector. How can green hydrogen accelerate India's path to net-zero carbon emissions by 2070? (150 words, 10 marks)",
+            mainsModelFramework = listOf(
+                "1. Introduction: Define green hydrogen and state India's import dependency ($100B+ annual fossil fuel bill).",
+                "2. Economic & Technical Bottlenecks: High capital cost of electrolysers, renewable transmission losses, and cost disparity vs grey hydrogen.",
+                "3. Strategic Benefits: Decarbonizing heavy steel & fertilizer industries, export leadership to EU under CBAM.",
+                "4. Conclusion: Scale-up via SIGHT PLI, domestic demand mandates, and dedicated green ammonia shipping corridors."
+            ),
+            memoryShortcut = memoryShortcuts[1] // Tropic of cancer / geography
+        )
+    )
 }
+
