@@ -8,6 +8,9 @@ enum class ExamCategory(val displayName: String, val shortBadge: String) {
     SSC_CGL("SSC CGL & CHSL", "SSC"),
     GROUP_C_D("Maharashtra Group C & D (Talathi/Police)", "Grp C/D"),
     STATE_PCS("State PCS (UPPSC, BPSC, MPPSC)", "State PCS"),
+    SCHOLARSHIP_EXAM("4th & 5th Scholarship (शिष्यवृत्ती)", "Scholarship"),
+    NAVODAYA_JNVST("5th Navodaya Vidyalaya (JNVST)", "Navodaya"),
+    OLYMPIAD_EXAMS("School Olympiads (IMO / NSO / IEO)", "Olympiad"),
     SCHOOL_FOUNDATION("Class 5th - Graduation Hub", "School/Grad")
 }
 

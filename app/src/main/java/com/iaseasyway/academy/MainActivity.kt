@@ -83,9 +83,17 @@ class MainActivity : ComponentActivity() {
                                             onGradeSelected = {
                                                 // Updated in repo
                                             },
-                                            onStartExamFromGrade = { _ ->
-                                                // Start appropriate paper
-                                                repository.startExam("upsc_prelims_2024_gs1")
+                                            onStartExamFromGrade = { gradeName ->
+                                                val targetPaperId = when {
+                                                    gradeName.contains("4th") || gradeName.contains("Scholarship") -> "scholarship_4th_5th_2024"
+                                                    gradeName.contains("5th") || gradeName.contains("Navodaya") -> "navodaya_jnvst_class6_2024"
+                                                    gradeName.contains("Olympiad") -> "olympiad_imo_nso_2024"
+                                                    gradeName.contains("MPSC") -> "mpsc_rajyaseva_2024"
+                                                    gradeName.contains("SSC") -> "ssc_cgl_tier1_2024"
+                                                    gradeName.contains("Group C") || gradeName.contains("Talathi") -> "group_c_talathi_2024"
+                                                    else -> "upsc_prelims_2024_gs1"
+                                                }
+                                                repository.startExam(targetPaperId)
                                                 activeScreen = ActiveScreen.EXAM_SIMULATION
                                             }
                                         )

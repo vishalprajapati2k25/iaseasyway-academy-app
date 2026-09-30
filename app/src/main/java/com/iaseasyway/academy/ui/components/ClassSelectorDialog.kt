@@ -27,7 +27,11 @@ fun ClassSelectorDialog(
     onDismiss: () -> Unit
 ) {
     val options = listOf(
-        "Class 5th (Junior Foundation)",
+        "Class 4th (Pre-Scholarship Foundation)",
+        "Class 5th (Navodaya & Scholarship Special)",
+        "4th & 5th Scholarship (महाराष्ट्र शिष्यवृत्ती)",
+        "5th Navodaya Vidyalaya (JNVST Entrance)",
+        "School Olympiads (IMO / NSO / IEO)",
         "Class 6th (NCERT Explorer)",
         "Class 7th (Medieval & Environment)",
         "Class 8th (Modern India & Science)",

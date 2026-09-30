@@ -72,7 +72,7 @@ fun ExamHubScreen(
                 OutlinedTextField(
                     value = searchQuery,
                     onValueChange = { searchQuery = it },
-                    placeholder = { Text("Search UPSC, MPSC, SSC, Group C...", color = TextMuted) },
+                    placeholder = { Text("Search UPSC, MPSC, Scholarship, Navodaya, Olympiads...", color = TextMuted) },
                     leadingIcon = { Icon(imageVector = Icons.Default.Search, contentDescription = "Search", tint = TextMuted) },
                     modifier = Modifier
                         .fillMaxWidth()

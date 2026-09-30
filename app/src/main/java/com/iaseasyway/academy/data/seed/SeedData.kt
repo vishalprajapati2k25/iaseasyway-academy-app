@@ -102,6 +102,63 @@ object SeedData {
                 "Class 9-10: Constitution Basics, Geography Maps & Critical Logic",
                 "Class 11-12: Advanced NCERT Mastery & Newspaper Reading Skills"
             )
+        ),
+        Course(
+            id = "course_scholarship_4th_5th",
+            title = "4th & 5th Standard Scholarship (शिष्यवृत्ती) Full Batch",
+            subtitle = "Paper 1 (मराठी/प्रथम भाषा + गणित) & Paper 2 (इंग्रजी + बुद्धिमत्ता चाचणी)",
+            category = "Scholarship",
+            price = 1499,
+            discountPrice = 499,
+            instructor = "IEW Junior Talent Cell",
+            rating = 4.96,
+            totalStudents = 14200,
+            isSubscribed = true,
+            badgeText = "Scholarship Spl",
+            syllabusModules = listOf(
+                "विभाग १: बुद्धिमत्ता चाचणी (आकृत्या, मालिका, वर्गीकरण, कूटप्रश्न)",
+                "विभाग २: प्राथमिक गणित (संख्याज्ञान, अपूर्णांक, भूमिती व मापन)",
+                "विभाग ३: मराठी भाषा व्याकरण व शब्दसंग्रह (समानार्थी, विरुद्धार्थी, म्हणी)",
+                "विभाग ४: इंग्रजी व्याकरण व शब्दकोश (Vocabulary & Grammar)"
+            )
+        ),
+        Course(
+            id = "course_navodaya_5th_jnvst",
+            title = "5th Navodaya Vidyalaya (JNVST) Target 2025",
+            subtitle = "Complete Mental Ability (80 Marks) + Arithmetic + Reading Passages & 10 Years PYQ",
+            category = "Navodaya",
+            price = 1999,
+            discountPrice = 699,
+            instructor = "JNVST Navodaya Mentors",
+            rating = 4.95,
+            totalStudents = 16800,
+            isSubscribed = false,
+            badgeText = "JNVST Class 6",
+            syllabusModules = listOf(
+                "Section 1: Mental Ability Test (Odd-Man-Out, Figure Matching, Pattern Completion)",
+                "Section 2: Arithmetic Speed Math (Decimals, Fractions, LCM-HCF, Speed & Distance)",
+                "Section 3: Language Reading Comprehension Passages",
+                "Section 4: 15 Real JNVST Simulation Mock Tests with Timer"
+            )
+        ),
+        Course(
+            id = "course_junior_olympiads",
+            title = "Junior Olympiad Super Minds (IMO / NSO / IEO / NSTSE)",
+            subtitle = "Higher Order Thinking Skills (HOTS) & Achievers Section for Classes 3rd - 8th",
+            category = "Olympiad",
+            price = 1799,
+            discountPrice = 599,
+            instructor = "Olympiad Gold Medalists Panel",
+            rating = 4.92,
+            totalStudents = 11300,
+            isSubscribed = false,
+            badgeText = "National Olympiad",
+            syllabusModules = listOf(
+                "Track 1: International Mathematics Olympiad (IMO Logical Reasoning & Achievers)",
+                "Track 2: National Science Olympiad (NSO Living World, Forces & Everyday Science)",
+                "Track 3: International English Olympiad (IEO Word & Structure Knowledge)",
+                "Track 4: Previous 8 Years Olympiad Medalist Question Papers"
+            )
         )
     )
 
@@ -425,6 +482,218 @@ object SeedData {
                     subject = "सामान्य ज्ञान"
                 )
             )
+        ),
+        ExamPaper(
+            id = "scholarship_4th_5th_2024",
+            title = "4th & 5th Scholarship Exam 2024 (महाराष्ट्र पूर्व उच्च प्राथमिक शिष्यवृत्ती)",
+            examCategory = ExamCategory.SCHOLARSHIP_EXAM,
+            year = 2024,
+            targetClass = "Class 4th & 5th",
+            durationMinutes = 90,
+            totalMarks = 150,
+            negativeMarking = 0.0,
+            questions = listOf(
+                ExamQuestion(
+                    id = "schol_24_q1",
+                    number = 1,
+                    text = "In the given number series, which number replaces the question mark? 3, 8, 15, 24, 35, ?",
+                    textMarathi = "खालील संख्यामालिकेत प्रश्नचिन्हाच्या जागी कोणती संख्या येईल?\n३, ८, १५, २४, ३५, ?",
+                    options = listOf(
+                        "A. 42",
+                        "B. 48",
+                        "C. 50",
+                        "D. 46"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. ४२",
+                        "B. ४८",
+                        "C. ५०",
+                        "D. ४६"
+                    ),
+                    correctOptionIndex = 1,
+                    explanation = "स्पष्टीकरण: लगतच्या पदांमधील फरक अनुक्रमे ५, ७, ९, ११ असा विषम संख्यांचा आहे. पुढील फरक १३ येईल: ३५ + १३ = ४८. (किंवा n² - १: २²-१=३, ३²-१=८, ४²-१=१५, ५²-१=२४, ६²-१=३५, ७²-१=४८).",
+                    pyqYear = "Scholarship 2024",
+                    subject = "बुद्धिमत्ता चाचणी (Intelligence Test)"
+                ),
+                ExamQuestion(
+                    id = "schol_24_q2",
+                    number = 2,
+                    text = "When a number is divided by 18, the quotient is 14 and the remainder is 5. What is the dividend?",
+                    textMarathi = "एका संख्येस १८ ने भागल्यास भागाकार १४ येतो व बाकी ५ उरते, तर ती संख्या कोणती?",
+                    options = listOf(
+                        "A. 248",
+                        "B. 252",
+                        "C. 257",
+                        "D. 260"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. २४८",
+                        "B. २५२",
+                        "C. २५७",
+                        "D. २६०"
+                    ),
+                    correctOptionIndex = 2,
+                    explanation = "सूत्र: भाज्य = (भाजक × भागाकार) + बाकी\nभाज्य = (१८ × १४) + ५ = २५२ + ५ = २५७.",
+                    pyqYear = "Scholarship 2024",
+                    subject = "गणित (Mathematics)"
+                ),
+                ExamQuestion(
+                    id = "schol_24_q3",
+                    number = 3,
+                    text = "Which of the following words is NOT a synonym for the word 'Sun' (सूर्य)?",
+                    textMarathi = "खालीलपैकी कोणता शब्द 'सूर्य' या शब्दाचा समानार्थी शब्द नाही?",
+                    options = listOf(
+                        "A. भास्कर (Bhaskar)",
+                        "B. दिनकर (Dinkar)",
+                        "C. सुधाकर (Sudhakar)",
+                        "D. भानू (Bhanu)"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. भास्कर",
+                        "B. दिनकर",
+                        "C. सुधाकर",
+                        "D. भानू"
+                    ),
+                    correctOptionIndex = 2,
+                    explanation = "'सुधाकर' म्हणजे चंद्र (शशी/सोम). भास्कर, दिनकर, भानू, रवी, मित्र, आदित्य हे सर्व सूर्याचे समानार्थी शब्द आहेत.",
+                    pyqYear = "Scholarship 2024",
+                    subject = "मराठी (First Language)"
+                )
+            )
+        ),
+        ExamPaper(
+            id = "navodaya_jnvst_class6_2024",
+            title = "5th Navodaya Vidyalaya Selection Test 2024 (JNVST Real Exam)",
+            examCategory = ExamCategory.NAVODAYA_JNVST,
+            year = 2024,
+            targetClass = "Class 5th (JNVST Class 6 Entrance)",
+            durationMinutes = 120,
+            totalMarks = 100,
+            negativeMarking = 0.0,
+            questions = listOf(
+                ExamQuestion(
+                    id = "jnvst_24_q1",
+                    number = 1,
+                    text = "Mental Ability (Odd-Man-Out): Out of four geometric figures, three share a property of equal interior angles while one does not. Identify the odd one out.",
+                    textMarathi = "मानसिक क्षमता चाचणी (विसंगत आकृती): दिलेल्या चार भौमितिक आकृत्यांपैकी तीन आकृत्यांमध्ये सर्व कोन समान आहेत, तर एक आकृती वेगळी आहे. ती ओळखा:",
+                    options = listOf(
+                        "A. Equilateral Triangle (समभुज त्रिकोण)",
+                        "B. Square (चौरस)",
+                        "C. Regular Hexagon (नियमित षटकोन)",
+                        "D. Scalene Triangle (विषमभुज त्रिकोण)"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. समभुज त्रिकोण (सर्व कोन ६०°)",
+                        "B. चौरस (सर्व कोन ९०°)",
+                        "C. नियमित षटकोन (सर्व कोन १२०°)",
+                        "D. विषमभुज त्रिकोण (सर्व कोन असमान)"
+                    ),
+                    correctOptionIndex = 3,
+                    explanation = "An equilateral triangle, square, and regular hexagon are regular polygons with all interior angles equal. A scalene triangle has all unequal angles.",
+                    pyqYear = "JNVST 2024",
+                    subject = "Mental Ability Test (MAT)"
+                ),
+                ExamQuestion(
+                    id = "jnvst_24_q2",
+                    number = 2,
+                    text = "Arithmetic Test: A train 180 meters long is running at a speed of 72 km/h. How many seconds will it take to completely cross a telegraph post?",
+                    textMarathi = "अंकगणित चाचणी: १८० मीटर लांबीची एक रेल्वे गाडी ७२ किमी/तास या वेगाने जात आहे. तर ती गाडी एका विजेच्या खांबाला किती सेकंदात ओलांडेल?",
+                    options = listOf(
+                        "A. 8 seconds",
+                        "B. 9 seconds",
+                        "C. 10 seconds",
+                        "D. 12 seconds"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. ८ सेकंद",
+                        "B. ९ सेकंद",
+                        "C. १० सेकंद",
+                        "D. १२ सेकंद"
+                    ),
+                    correctOptionIndex = 1,
+                    explanation = "वेगाचे मीटर/सेकंद मध्ये रूपांतर = ७२ × (५/१८) = २० मीटर/सेकंद.\nखांबाला ओलांडण्यासाठी लागणारा वेळ = अंतर / वेग = १८० / २० = ९ सेकंद.",
+                    pyqYear = "JNVST 2024",
+                    subject = "Arithmetic Test (Maths)"
+                ),
+                ExamQuestion(
+                    id = "jnvst_24_q3",
+                    number = 3,
+                    text = "Arithmetic Test: A shopkeeper purchased a study kit for ₹160 and sold it for ₹200. What is his profit percentage?",
+                    textMarathi = "एका दुकानदाराने एक अभ्यास संच ₹१६० ला विकत घेतला आणि ₹२०० ला विकला. तर त्याला झालेला नफा शेकडा किती?",
+                    options = listOf(
+                        "A. 20%",
+                        "B. 25%",
+                        "C. 30%",
+                        "D. 40%"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. २०%",
+                        "B. २५%",
+                        "C. ३०%",
+                        "D. ४०%"
+                    ),
+                    correctOptionIndex = 1,
+                    explanation = "नफा = विक्री किंमत - खरेदी किंमत = २०० - १६० = ₹४०.\nशेकडा नफा = (नफा / खरेदी किंमत) × १०० = (४० / १६०) × १०० = (१/४) × १०० = २५%.",
+                    pyqYear = "JNVST 2024",
+                    subject = "Arithmetic Test (Maths)"
+                )
+            )
+        ),
+        ExamPaper(
+            id = "olympiad_imo_nso_2024",
+            title = "National & International Olympiad 2024 (IMO Math & NSO Science Level 1)",
+            examCategory = ExamCategory.OLYMPIAD_EXAMS,
+            year = 2024,
+            targetClass = "Class 4th - 8th Olympiad",
+            durationMinutes = 60,
+            totalMarks = 50,
+            negativeMarking = 0.0,
+            questions = listOf(
+                ExamQuestion(
+                    id = "oly_24_q1",
+                    number = 1,
+                    text = "International Mathematics Olympiad (IMO): The sum of three consecutive odd numbers is 69. What is the square of the largest number among them?",
+                    textMarathi = "आंतरराष्ट्रीय गणित ऑलिम्पियाड (IMO): तीन सलग विषम संख्यांची बेरीज ६९ आहे. तर त्यांमधील सर्वात मोठ्या संख्येचा वर्ग किती?",
+                    options = listOf(
+                        "A. 529",
+                        "B. 576",
+                        "C. 625",
+                        "D. 676"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. ५२९ (२३²)",
+                        "B. ५७६ (२४²)",
+                        "C. ६२५ (२५²)",
+                        "D. ६७६ (२६²)"
+                    ),
+                    correctOptionIndex = 2,
+                    explanation = "Let numbers be x, x+2, x+4. Sum = 3x + 6 = 69 => 3x = 63 => x = 21. The numbers are 21, 23, and 25. Largest number is 25, and 25² = 625.",
+                    pyqYear = "IMO Olympiad 2024",
+                    subject = "Mathematics Olympiad (IMO)"
+                ),
+                ExamQuestion(
+                    id = "oly_24_q2",
+                    number = 2,
+                    text = "National Science Olympiad (NSO): Which cell organelle contains its own DNA and ribosomes and is known as the 'Powerhouse of the Cell'?",
+                    textMarathi = "राष्ट्रीय विज्ञान ऑलिम्पियाड (NSO): कोणत्या पेशी अंगकामध्ये स्वतःचे डीएनए (DNA) व रायबोझोम्स असतात आणि त्याला 'पेशीचे ऊर्जा केंद्र' (Powerhouse of the Cell) म्हणतात?",
+                    options = listOf(
+                        "A. Golgi Apparatus (गॉल्जी संकुल)",
+                        "B. Mitochondria (तंतुकणिका)",
+                        "C. Endoplasmic Reticulum (आंतरद्रव्यजालिका)",
+                        "D. Lysosome (लयकारिका)"
+                    ),
+                    optionsMarathi = listOf(
+                        "A. गॉल्जी संकुल",
+                        "B. तंतुकणिका (Mitochondria)",
+                        "C. आंतरद्रव्यजालिका",
+                        "D. लयकारिका (आत्मघाती पिशव्या)"
+                    ),
+                    correctOptionIndex = 1,
+                    explanation = "Mitochondria produce cellular energy in the form of ATP (adenosine triphosphate) through cellular respiration and uniquely possess circular DNA and 70S ribosomes.",
+                    pyqYear = "NSO Olympiad 2024",
+                    subject = "Science Olympiad (NSO)"
+                )
+            )
         )
     )
 
@@ -607,16 +876,94 @@ object SeedData {
                     )
                 )
             )
+        ),
+        GamifiedLessonUnit(
+            id = "unit_4_scholarship_navodaya",
+            unitNumber = 4,
+            title = "Navodaya & शिष्यवृत्ती Logic Sprint",
+            topic = "Mental Ability, Odd Man Out, Mirror Images & Series",
+            stages = listOf(
+                GamifiedStage(
+                    id = "stage_u4_s1",
+                    stageNumber = 1,
+                    title = "Number Patterns & Logic (संख्या मालिका)",
+                    xpReward = 25,
+                    isUnlocked = true,
+                    isCompleted = false,
+                    stars = 0,
+                    questions = listOf(
+                        GamifiedQuestion(
+                            id = "gq_sn1",
+                            type = QuestionType.MCQ,
+                            prompt = "Which number completes the pattern? 2, 6, 12, 20, 30, ?",
+                            options = listOf("36", "40", "42", "48"),
+                            correctOptionIndex = 2,
+                            explanation = "Differences are consecutive even numbers: +4, +6, +8, +10, +12. 30 + 12 = 42 (or 1×2, 2×3, 3×4, 4×5, 5×6, 6×7=42)."
+                        ),
+                        GamifiedQuestion(
+                            id = "gq_sn2",
+                            type = QuestionType.MCQ,
+                            prompt = "Navodaya MAT: If a mirror is placed to the right of letter 'F', which represents its correct mirror image?",
+                            options = listOf("F", "ꟻ (Inverted horizontally)", "ᖴ", "Ⅎ"),
+                            correctOptionIndex = 1,
+                            explanation = "Mirror reflection reverses left and right while keeping vertical orientation unchanged."
+                        )
+                    )
+                ),
+                GamifiedStage(
+                    id = "stage_u4_s2",
+                    stageNumber = 2,
+                    title = "Scholarship Word & Math Puzzles",
+                    xpReward = 30,
+                    isUnlocked = false,
+                    isCompleted = false,
+                    stars = 0
+                )
+            )
+        ),
+        GamifiedLessonUnit(
+            id = "unit_5_olympiads",
+            unitNumber = 5,
+            title = "Junior Olympiad Achievers Quest",
+            topic = "IMO Math Wizards & NSO Science Explorers",
+            stages = listOf(
+                GamifiedStage(
+                    id = "stage_u5_s1",
+                    stageNumber = 1,
+                    title = "IMO Speed Math (Classes 4-8)",
+                    xpReward = 30,
+                    isUnlocked = true,
+                    isCompleted = false,
+                    stars = 0,
+                    questions = listOf(
+                        GamifiedQuestion(
+                            id = "gq_oly1",
+                            type = QuestionType.MCQ,
+                            prompt = "How many prime numbers exist between 1 and 30?",
+                            options = listOf("8", "9", "10", "11"),
+                            correctOptionIndex = 2,
+                            explanation = "The prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 (exactly 10 prime numbers)."
+                        )
+                    )
+                )
+            )
         )
     )
 
     val schoolGrades: List<SchoolGradeItem> = listOf(
         SchoolGradeItem(
+            gradeName = "Class 4th",
+            displayName = "Class 4th (Pre-Scholarship Foundation)",
+            keySubjects = listOf("Basic Arithmetic", "Mental Ability (बुद्धिमत्ता)", "Environmental Studies", "Marathi & English"),
+            totalLessons = 35,
+            foundationFocus = "Early preparation for 4th/5th Scholarship exams, logical puzzles, number operations, and English vocabulary."
+        ),
+        SchoolGradeItem(
             gradeName = "Class 5th",
-            displayName = "Class 5th (Junior Foundation)",
-            keySubjects = listOf("EVS (Environment)", "Basic Mathematics", "General Knowledge", "Language Skills"),
-            totalLessons = 32,
-            foundationFocus = "Observation skills, wildlife conservation, state symbols, and natural phenomena."
+            displayName = "Class 5th (Navodaya & Scholarship Special)",
+            keySubjects = listOf("JNVST Mental Ability", "Scholarship Maths & Marathi", "EVS & Science", "English Grammar"),
+            totalLessons = 45,
+            foundationFocus = "Target training for 5th Navodaya Vidyalaya (JNVST) selection test, Maharashtra 5th Scholarship (PUP), and Math Olympiad (IMO)."
         ),
         SchoolGradeItem(
             gradeName = "Class 6th",

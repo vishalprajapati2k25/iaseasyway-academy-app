@@ -50,13 +50,13 @@ fun SchoolClassHubScreen(
                     .padding(16.dp)
             ) {
                 Text(
-                    text = "School to Graduation Foundation Hub",
+                    text = "School & Junior Talent Foundation Hub",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
                     color = PureWhite
                 )
                 Text(
-                    text = "Select any Class from 5th to Degree to train for civil service foundations early",
+                    text = "Select any Class from 4th to Degree: 4th/5th Scholarship, 5th Navodaya, Olympiads & Civil Services",
                     fontSize = 12.sp,
                     color = TextMuted
                 )
