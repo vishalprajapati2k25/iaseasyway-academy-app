@@ -5,6 +5,21 @@
 ![Min SDK](https://img.shields.io/badge/Min%20SDK-24-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-MVVM%20%2B%20Clean-orange)
 ![Security](https://img.shields.io/badge/DRM-FLAG__SECURE%20%2B%20R8-red)
+[![GitHub release](https://img.shields.io/github/v/release/vishalprajapati2k25/iaseasyway-academy-app?color=blue&logo=github)](https://github.com/vishalprajapati2k25/iaseasyway-academy-app/releases)
+
+---
+
+## 📥 Direct Downloads & Official Releases (GitHub CDN)
+
+| Build Artifact | Format | Size | Direct Download Link | Target / Purpose |
+| :--- | :--- | :---: | :--- | :--- |
+| **`IEWAcademy-v1.0.0-release.apk`** | Signed APK | **5.5 MB** | [⬇️ **Download Release APK**](https://github.com/vishalprajapati2k25/iaseasyway-academy-app/releases/download/v1.0.0/IEWAcademy-v1.0.0-release.apk) | Production testing, direct Android phone installation & sideloading. |
+| **`IEWAcademy-v1.0.0-debug.apk`** | Debug APK | **15.0 MB** | [⬇️ **Download Debug APK**](https://github.com/vishalprajapati2k25/iaseasyway-academy-app/releases/download/v1.0.0/IEWAcademy-v1.0.0-debug.apk) | Developer testing with Logcat and diagnostics enabled. |
+| **`IEWAcademy-v1.0.0-release.aab`** | App Bundle | **16.3 MB** | [⬇️ **Download Production AAB**](https://github.com/vishalprajapati2k25/iaseasyway-academy-app/releases/download/v1.0.0/IEWAcademy-v1.0.0-release.aab) | Google Play Console store submission package. |
+
+> 🏷️ **GitHub Release Tag**: [`v1.0.0`](https://github.com/vishalprajapati2k25/iaseasyway-academy-app/releases/tag/v1.0.0) • [Release Notes & Checksums](file:///home/virus/.gemini/antigravity-cli/scratch/iaseasyway-academy-app/release/README.md)
+
+---
 
 **IEW Academy** is the official Android native learning and exam simulation app for **IAS EasyWay** ([iaseasyway.com](https://www.iaseasyway.com)). It combines **Duolingo-style gamified learning** with a **time-based examination platform** covering all competitive exams (UPSC, MPSC, SSC, Group C/D, Maharashtra & other State PCS) and school foundation levels from **Class 5th till Graduation**.
 
